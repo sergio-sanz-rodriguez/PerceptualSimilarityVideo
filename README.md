@@ -1,6 +1,6 @@
 # Learned Perceptual Video Patch Similarity (LPVPS) Metric
 
-LPVPS is an extension of the original [Learned Perceptual Image Patch Similarity (LPIPS) metric](https://github.com/richzhang/PerceptualSimilarity/tree/master), adapted to operate on video files instead of individual images.
+LPVPS is an extension of the original [Learned Perceptual Image Patch Similarity (LPIPS)](https://github.com/richzhang/PerceptualSimilarity/tree/master) metric, adapted to operate on video files instead of individual images.
 
 LPIPS provides a learned, human-aligned measure of perceptual difference between two images. This project generalizes the idea to video by computing LPIPS on corresponding frame pairs and aggregating the results into a single similarity score.
 
