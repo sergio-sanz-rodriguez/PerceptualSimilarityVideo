@@ -196,7 +196,7 @@ def main():
 
             if args.per_frame:
                 #if frame_idx % 10 == 0:
-                print(f"Frame {frame_idx} | LPVPS={score:.6f}")
+                print(f"{frame_idx}: LPVPS={score:.6f}")
 
         if frame_scores:
             mean_lpvps = sum(frame_scores) / len(frame_scores)
