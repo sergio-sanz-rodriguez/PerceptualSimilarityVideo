@@ -5,6 +5,7 @@ import numpy as np
 import torch
 import lpips
 import warnings
+import statistics
 
 warnings.filterwarnings(
     "ignore",
@@ -200,9 +201,10 @@ def main():
 
         if frame_scores:
             mean_lpvps = sum(frame_scores) / len(frame_scores)
+            harm_lpvps = statistics.harmonic_mean(frame_scores)
             print("===========================")
             print(f"Number of frame pairs: {len(frame_scores)}")
-            print(f"Mean LPVPS: {mean_lpvps:.6f}")
+            print(f"Mean LPVPS: {mean_lpvps:.6f} Arithmetic {harm_lpvps:.6f} Harmonic")            
         else:
             print("No valid frames processed.")
 
